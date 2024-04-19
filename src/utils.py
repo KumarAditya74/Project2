@@ -63,7 +63,7 @@ def data_base():
     
     query = "SELECT * From package"
     df = pd.read_sql(query, engine)
-    filepath=os.path.join('notebooks','data', 'filter.csv')
+    filepath=os.path.join('notebooks','data', 'filter1.csv')
     df.to_csv(filepath, index=False)
     print("database successfully created")
     '''
